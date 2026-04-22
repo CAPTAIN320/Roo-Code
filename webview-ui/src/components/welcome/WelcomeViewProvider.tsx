@@ -239,7 +239,7 @@ const WelcomeViewProvider = () => {
 												ref={manualUrlInputRef as any}
 												value={manualUrl}
 												onKeyUp={handleManualUrlChange}
-												placeholder="vscode://RooVeterinaryInc.roo-cline/auth/clerk/callback?state=..."
+												placeholder="vscode://local.code-captain/auth/clerk/callback?state=..."
 												className="flex-1"
 											/>
 											<Button
