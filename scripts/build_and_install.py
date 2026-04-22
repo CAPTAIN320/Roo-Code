@@ -65,9 +65,9 @@ def main() -> None:
     else:
         print("\n[1/4] Skipping pnpm install (--skip-install)")
 
-    # 2. Bundle
+    # 2. Bundle (--force bypasses turbo cache so asset changes like icons are always picked up)
     print("\n[2/4] Bundling extension...")
-    run(["pnpm", "run", "bundle"])
+    run(["pnpm", "run", "bundle", "--force"])
 
     # 3. Package into VSIX
     print("\n[3/4] Packaging VSIX...")
